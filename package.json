@@ -1,0 +1,29 @@
+{
+  "name": "angular-list-select",
+  "version": "1.0.0",
+  "description": "Angular directive for multiple item selection.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nejcsever/angular-list-select.git"
+  },
+  "keywords": [
+    "angular",
+    "list",
+    "select"
+  ],
+  "author": "Nejc Sever",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nejcsever/angular-list-select/issues"
+  },
+  "homepage": "https://github.com/nejcsever/angular-list-select#readme",
+  "devDependencies": {
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglifyjs": "^0.6.2"
+  }
+}
