@@ -1,0 +1,10 @@
+.column {
+	text-align: center;
+}
+.column h1 {
+	margin-bottom: 40px;
+}
+.ls-container {
+	margin: 0 auto;
+	display: inline-block;
+}

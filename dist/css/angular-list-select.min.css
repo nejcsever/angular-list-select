@@ -1,8 +1,26 @@
 .ls-container {
-  display: inline-block; }
+  display: inline-block;
+  text-align: initial; }
   .ls-container .ls-items,
   .ls-container .ls-selected-items {
+    min-height: 200px;
+    min-width: 150px;
+    max-height: 200px;
+    overflow: auto;
+    float: left;
     display: inline-block;
-    border: 1px solid gray; }
+    border: 1px solid #ddd; }
+    .ls-container .ls-items .ls-item,
+    .ls-container .ls-selected-items .ls-item {
+      padding: 5px 10px; }
   .ls-container .ls-selected-items {
     margin-left: 50px; }
+    .ls-container .ls-selected-items .ls-selected-item {
+      padding: 5px 10px; }
+  .ls-container .ls-item,
+  .ls-container .ls-selected-item {
+    widht: 100%; }
+    .ls-container .ls-item:hover,
+    .ls-container .ls-selected-item:hover {
+      background-color: #eee;
+      cursor: pointer; }

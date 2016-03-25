@@ -16,10 +16,10 @@
                 },
                 template: '<div class="ls-container">' +
                     '<div class="ls-items">' +
-                    '<div class="item" ng-repeat="item in items">{{item}}</div>' +
+                    '<div class="ls-item" ng-repeat="item in items">{{item.name}}</div>' +
                     '</div>' +
                     '<div class="ls-selected-items">' +
-                    '<div class="item" ng-repeat="item in selectedItems">{{item}}</div>' +
+                    '<div class="ls-selected-item" ng-repeat="item in selectedItems">{{item.name}}</div>' +
                     '</div>' +
                     '</div>'
             }

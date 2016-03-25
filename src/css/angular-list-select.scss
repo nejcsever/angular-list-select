@@ -1,11 +1,31 @@
 .ls-container {
     display: inline-block;
+    text-align: initial;
     .ls-items,
     .ls-selected-items {
+        min-height: 200px;
+        min-width: 150px;
+        max-height: 200px;
+        overflow: auto;
+        float: left;
         display: inline-block;
-        border: 1px solid gray;
+        border: 1px solid #ddd;
+        .ls-item {
+            padding: 5px 10px;
+        }
     }
     .ls-selected-items {
         margin-left: 50px;
+        .ls-selected-item {
+            padding: 5px 10px;
+        }
+    }
+    .ls-item,
+    .ls-selected-item {
+        widht: 100%;
+        &:hover {
+            background-color: #eee;
+            cursor: pointer;
+        }
     }
 }
