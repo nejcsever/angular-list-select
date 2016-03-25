@@ -15,6 +15,12 @@
                     selectedItems: '='
                 },
                 template: '<div class="ls-container">' +
+                    '<div class="ls-items">' +
+                    '<div class="item" ng-repeat="item in items">{{item}}</div>' +
+                    '</div>' +
+                    '<div class="ls-selected-items">' +
+                    '<div class="item" ng-repeat="item in selectedItems">{{item}}</div>' +
+                    '</div>' +
                     '</div>'
             }
         });
