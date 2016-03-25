@@ -22,8 +22,10 @@
   },
   "homepage": "https://github.com/nejcsever/angular-list-select#readme",
   "devDependencies": {
+    "del": "^2.2.0",
     "gulp-ng-annotate": "^2.0.0",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
     "gulp-uglifyjs": "^0.6.2"
   }
 }

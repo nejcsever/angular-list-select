@@ -1,0 +1,8 @@
+.ls-container {
+  display: inline-block; }
+  .ls-container .ls-items,
+  .ls-container .ls-selected-items {
+    display: inline-block;
+    border: 1px solid gray; }
+  .ls-container .ls-selected-items {
+    margin-left: 50px; }

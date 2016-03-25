@@ -5,8 +5,17 @@
  * License: MIT
  */
 (function() {
-    angular.module('angular-list-select', []).directive('itemSelector', function() {
-        'use strict';
-        console.log("Initial commit");
-    });
+    angular.module('angular-list-select', [])
+        .directive('listSelect', function() {
+            return {
+                restrict: 'AE',
+                replace: true,
+                scope: {
+                    items: '=',
+                    selectedItems: '='
+                },
+                template: '<div class="ls-container">' +
+                    '</div>'
+            }
+        });
 })();
