@@ -4,6 +4,7 @@ const uglify = require('gulp-uglifyjs');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const del = require('del');
+const browserSync = require('browser-sync');
 
 gulp.task('js', () => {
     gulp.src(['src/**/*.js'])
@@ -30,5 +31,17 @@ gulp.task('watch', ['default'], () => {
     gulp.watch('src/**/*.js', ['js']);
 });
 
+gulp.task('webserver', function() {
+    browserSync({
+        open: true,
+        online: false,
+        server: {
+            baseDir: '.'
+        }
+    });
+});
+
 
 gulp.task('default', ['js', 'sass']);
+
+gulp.task('devel', ['webserver', 'watch']);
