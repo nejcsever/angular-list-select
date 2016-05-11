@@ -13,15 +13,16 @@
                 scope: {
                     items: '=',
                     selectedItems: '=',
-                    itemId: '='
+                    itemId: '=',
+                    itemTemplate: '@'
                 },
                 link: linkFunc,
                 template: '<div class="ls-container">' +
                     '<div class="ls-items">' +
-                    '<div class="ls-item" ng-repeat="item in dirItems" ng-click="itemClick(item)">{{item.name}}</div>' +
+                    '<div class="ls-item" ng-repeat="item in dirItems" ng-click="itemClick(item)"><div ng-include="itemTemplate"></div></div>' +
                     '</div>' +
                     '<div class="ls-selected-items">' +
-                    '<div class="ls-selected-item" ng-repeat="item in selectedItems" ng-click="selItemClick(item)">{{item.name}}</div>' +
+                    '<div class="ls-selected-item" ng-repeat="item in selectedItems" ng-click="selItemClick(item)"><div ng-include="itemTemplate"></div></div>' +
                     '</div>' +
                     '</div>'
             }

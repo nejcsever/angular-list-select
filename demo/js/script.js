@@ -18,20 +18,16 @@ angular.module('demo-app', ['angular-list-select'])
             surname: "Gwin"
         }, {
             id: 4,
-            name: "Nejc",
-            surname: "Sever"
+            name: "Peter",
+            surname: "Prevc"
         }, {
             id: 5,
-            name: "Brandon",
-            surname: "Faircloth"
+            name: "Tina",
+            surname: "Maze"
         }, {
             id: 6,
-            name: "Neil",
-            surname: "Donoghue"
-        }, {
-            id: 7,
-            name: "Aaron",
-            surname: "Gwin"
+            name: "Loic",
+            surname: "Bruni"
         }];
         $scope.selectedPeople = [];
         $scope.personId = function(person) {

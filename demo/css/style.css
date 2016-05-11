@@ -8,3 +8,6 @@
 	margin: 0 auto;
 	display: inline-block;
 }
+.item > .name {
+	font-weight: bold;
+}
