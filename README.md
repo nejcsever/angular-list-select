@@ -4,7 +4,7 @@ Directive is in early stage of development...
 
 Angular list select is an angular directive that allows you to select multiple items from a list of items. For now you can filter items via text input and create a custom template for each item and style it as you wish.
 
-You can try it in [DEMO](https://embed.plnkr.co/nAJkOF4nwcVusdBAKCOR/)
+You can try it in <a href="https://embed.plnkr.co/nAJkOF4nwcVusdBAKCOR/" target="_blank">DEMO</a>
 
 ### Directive attributes
 `items` - list of items to be used in list select
