@@ -14,15 +14,21 @@
                     items: '=',
                     selectedItems: '=',
                     itemId: '=',
-                    itemTemplate: '@'
+                    itemTemplate: '@',
+                    search: '@'
                 },
                 link: linkFunc,
                 template: '<div class="ls-container">' +
+                    '<div>' +
                     '<div class="ls-items">' +
-                    '<div class="ls-item" ng-repeat="item in dirItems" ng-click="itemClick(item)"><div ng-include="itemTemplate"></div></div>' +
+                    '<div class="ls-item" ng-repeat="item in dirItems | filter:searchText" ng-click="itemClick(item)"><div ng-include="itemTemplate"></div></div>' +
                     '</div>' +
                     '<div class="ls-selected-items">' +
                     '<div class="ls-selected-item" ng-repeat="item in selectedItems" ng-click="selItemClick(item)"><div ng-include="itemTemplate"></div></div>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="search-bar-container">' +
+                    '<div ng-show="search"><input type="text" ng-model="searchText" ng-class="search" placeholder="Filter..."></div>' +
                     '</div>' +
                     '</div>'
             }

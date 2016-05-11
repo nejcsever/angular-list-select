@@ -11,3 +11,7 @@
 .item > .name {
 	font-weight: bold;
 }
+.search-input {
+	border-radius: 3px;
+	border: 1px solid #eee;
+}

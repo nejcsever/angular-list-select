@@ -17,10 +17,14 @@
     .ls-item,
     .ls-selected-item {
         width: 100%;
-            padding: 5px 10px;
+        padding: 5px 10px;
         &:hover {
             background-color: #eee;
             cursor: pointer;
         }
+    }
+    .search-bar-container {
+        text-align: center;
+        margin-top: 5px;
     }
 }
